@@ -30,7 +30,7 @@
     </ownedViews>
     <ownedViews xmi:type="viewpoint:DView" uid="__LZ4YFcCEeutQJPDP5646Q">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.polarsys.capella.core.sirius.analysis/description/physical.odesign#//@ownedViewpoints[name='Physical%20Architecture']"/>
-      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_CdR40VcDEeutQJPDP5646Q" name="[PAB] Physical System" repPath="#_CdLyMFcDEeutQJPDP5646Q" changeId="39f10249-8fd6-423c-9878-71c8923b5b6a">
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_CdR40VcDEeutQJPDP5646Q" name="[PAB] Physical System" repPath="#_CdLyMFcDEeutQJPDP5646Q" changeId="dfd5d0c1-7d26-4d8f-866f-ba37f596be4c">
         <eAnnotations xmi:type="description:DAnnotation" uid="_CdTG81cDEeutQJPDP5646Q" source="https://www.polarsys.org/capella/dannotation/DesactivatedFilters">
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CdTG9FcDEeutQJPDP5646Q" key="hide.computed.component.exchanges.filter" value="true"/>
           <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CdTG9VcDEeutQJPDP5646Q" key="hide.computed.physical.links.filter" value="true"/>
@@ -77,16 +77,16 @@
   <diagram:DSemanticDiagram uid="_CdLyMFcDEeutQJPDP5646Q">
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_CdTG8FcDEeutQJPDP5646Q" source="GMF_DIAGRAMS">
       <data xmi:type="notation:Diagram" xmi:id="_CdTG8VcDEeutQJPDP5646Q" type="Sirius" element="_CdLyMFcDEeutQJPDP5646Q" measurementUnit="Pixel">
-        <children xmi:type="notation:Node" xmi:id="_Dd6PYFcDEeutQJPDP5646Q" type="2001" element="_DdhN0FcDEeutQJPDP5646Q">
-          <children xmi:type="notation:Node" xmi:id="_Dd6PY1cDEeutQJPDP5646Q" type="5002">
-            <layoutConstraint xmi:type="notation:Location" xmi:id="_Dd6PZFcDEeutQJPDP5646Q" x="31" y="3"/>
+        <children xmi:type="notation:Node" xmi:id="_8kSaQFcEEeuYMJqXt9JLEg" type="2001" element="_8hK00FcEEeuYMJqXt9JLEg">
+          <children xmi:type="notation:Node" xmi:id="_8kXSwFcEEeuYMJqXt9JLEg" type="5002">
+            <layoutConstraint xmi:type="notation:Location" xmi:id="_8kXSwVcEEeuYMJqXt9JLEg" x="31" y="3"/>
           </children>
-          <children xmi:type="notation:Node" xmi:id="_Dd_H4FcDEeutQJPDP5646Q" type="3003" element="_DdnUcFcDEeutQJPDP5646Q">
-            <styles xmi:type="notation:ShapeStyle" xmi:id="_Dd_H4VcDEeutQJPDP5646Q" fontName="Segoe UI"/>
-            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dd_H4lcDEeutQJPDP5646Q"/>
+          <children xmi:type="notation:Node" xmi:id="_8kdZYFcEEeuYMJqXt9JLEg" type="3016" element="_8hY3QFcEEeuYMJqXt9JLEg">
+            <styles xmi:type="notation:ShapeStyle" xmi:id="_8kdZYVcEEeuYMJqXt9JLEg" fontName="Segoe UI"/>
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8kdZYlcEEeuYMJqXt9JLEg"/>
           </children>
-          <styles xmi:type="notation:ShapeStyle" xmi:id="_Dd6PYVcDEeutQJPDP5646Q" fontName="Segoe UI" fontHeight="10"/>
-          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_Dd6PYlcDEeutQJPDP5646Q" x="470" y="300" width="30" height="30"/>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_8kSaQVcEEeuYMJqXt9JLEg" fontName="Segoe UI" fontHeight="10"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8kSaQlcEEeuYMJqXt9JLEg" x="360" y="200" width="30" height="30"/>
         </children>
         <styles xmi:type="notation:DiagramStyle" xmi:id="_CdTG8lcDEeutQJPDP5646Q"/>
       </data>
@@ -94,10 +94,10 @@
     <ownedAnnotationEntries xmi:type="description:AnnotationEntry" uid="_CggzAFcDEeutQJPDP5646Q" source="DANNOTATION_CUSTOMIZATION_KEY">
       <data xmi:type="diagram:ComputedStyleDescriptionRegistry" uid="_CggzAVcDEeutQJPDP5646Q"/>
     </ownedAnnotationEntries>
-    <ownedDiagramElements xmi:type="diagram:DNode" uid="_DdhN0FcDEeutQJPDP5646Q" name="FunctionalPrimaryAsset 1" width="3" height="3" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" uid="_8hK00FcEEeuYMJqXt9JLEg" name="FunctionalPrimaryAsset 1" width="3" height="3" resizeKind="NSEW">
       <target xmi:type="cybersecurity:FunctionalPrimaryAsset" href="DiffPrj.capella#c4015b6c-d8c7-43e6-aa79-22a2a38b165f"/>
       <semanticElements xmi:type="cybersecurity:FunctionalPrimaryAsset" href="DiffPrj.capella#c4015b6c-d8c7-43e6-aa79-22a2a38b165f"/>
-      <ownedStyle xmi:type="diagram:Square" uid="_DdnUcFcDEeutQJPDP5646Q" labelSize="10" color="37,19,227">
+      <ownedStyle xmi:type="diagram:Ellipse" uid="_8hY3QFcEEeuYMJqXt9JLEg" labelSize="10" color="71,3,97">
         <customFeatures>color</customFeatures>
         <description xmi:type="style:EllipseNodeDescription" href="platform:/plugin/org.polarsys.capella.cybersecurity.sirius.analysis/analysis/cybersecurity.odesign#//@ownedViewpoints[name='Cybersecurity']/@ownedRepresentationExtensions[name='Cybersecurity%20Architecture%20Diagram%20Extensions']/@layers[name='Cybersecurity%20Assets%20Layer']/@nodeMappings[name='PrimaryAsset']/@style"/>
       </ownedStyle>
