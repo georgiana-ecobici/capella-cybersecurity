@@ -12,6 +12,7 @@
  *******************************************************************************/
 package org.polarsys.capella.cybersecurity.ui.activity.predicate;
 
+import org.eclipse.amalgam.explorer.activity.ui.api.editor.ActivityExplorerEditor;
 import org.eclipse.amalgam.explorer.activity.ui.api.editor.activities.ExplorerActivity;
 import org.eclipse.amalgam.explorer.activity.ui.api.editor.input.ActivityExplorerEditorInput;
 import org.eclipse.amalgam.explorer.activity.ui.api.editor.predicates.IPredicate;
@@ -19,11 +20,30 @@ import org.eclipse.sirius.business.api.session.Session;
 import org.polarsys.capella.core.data.capellamodeller.Project;
 import org.polarsys.capella.core.sirius.ui.helper.SessionHelper;
 import org.polarsys.capella.cybersecurity.CyberSecurityViewpointHelper;
+import org.eclipse.ui.IEditorPart;
+import org.eclipse.ui.PlatformUI;
 
 public class IsViewpointActivatedPredicate implements IPredicate {
+
+  @Override
+  public boolean isOk() {
+    IEditorPart activeEditor = PlatformUI.getWorkbench().getActiveWorkbenchWindow().getActivePage().getActiveEditor();
+
+    if (activeEditor instanceof ActivityExplorerEditor) {
+      ActivityExplorerEditor activityExplorerEditor = (ActivityExplorerEditor) activeEditor;
+      ActivityExplorerEditorInput editorInput = activityExplorerEditor.getEditorInput();
+      return checkEditor(editorInput);
+    }
+    return false;
+  }
+
   @Override
   public boolean isActivityOk(ExplorerActivity activity) {
     ActivityExplorerEditorInput editorInput = activity.getSection().getActivityExplorerPage().getEditorInput();
+    return checkEditor(editorInput);
+  }
+
+  private boolean checkEditor(ActivityExplorerEditorInput editorInput) {
     if (editorInput != null) {
       Object adapter = editorInput.getAdapter(Session.class);
       if (adapter instanceof Session) {
